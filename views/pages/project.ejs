@@ -1,0 +1,74 @@
+<%- include('../layout/header') %>
+    <script>
+        document.title = "Projects • KatowProject";
+    </script>
+    <!-- Banner -->
+    <!-- Note: The "styleN" class below should match that of the header element. -->
+    <section id="banner" class="style2">
+        <div class="inner">
+            <span class="image">
+                <img src="images/pic07.jpg" alt="" />
+            </span>
+            <header class="major">
+                <h1>Projects</h1>
+            </header>
+            <div class="content">
+                <p>
+                    Projects List
+                </p>
+                <ul class="actions">
+                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+        <!-- Two -->
+        <section id="one" class="spotlights">
+            <% data.forEach((a, i)=> { %>
+                <section>
+                    <a href="<%=a.html_url%>" class="image">
+                        <% if (i % 2===0) { %>
+                            <img src="/images/pic08.jpg" alt="" data-position="top center" />
+                            <% } else {%>
+                                <img src="/images/pic09.jpg" alt="" data-position="25% 25%" />
+                                <% } %>
+                    </a>
+
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3 style="text-transform: capitalize;">
+                                    <%=a.name%>
+                                </h3>
+                            </header>
+                            <p>
+                                <%=a.description%>
+                            </p>
+
+                            <ul class="actions">
+                                <li><strong>Language:</strong>
+                                    <%=a.language%>
+                                </li>
+                                <li><strong>Stars:</strong>
+                                    <%=a.stargazers_count%>
+                                </li>
+                                <li><strong>Forks:</strong>
+                                    <%=a.forks%>
+                                </li>
+                                <li><strong>Open Issues:</strong>
+                                    <%=a.open_issues%>
+                                </li>
+                            </ul>
+
+                            <ul class="actions">
+                                <li><a href="<%=a.html_url%>" class="button">See Detail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <% }) %>
+        </section>
+        <%- include('../layout/footer') %>

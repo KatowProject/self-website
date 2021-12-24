@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Komikato",
+        "description": "Animanga Read and Watch",
+        "image": "/images/kato.png",
+        "url": "https://github.com/KatowProject/komikato"
+    },
+    {
+        "name": "Kato-Bot",
+        "description": "Kato Discord Bot",
+        "image": "/images/katow.png",
+        "url": "https://github.com/KatowProject/kato-bot"
+    },
+    {
+        "name": "Trakter-Scraper",
+        "description": "Trakteer Scraper, Cek Saldo, History dan Notifikasi",
+        "image": "/images/trakteer.png",
+        "url": "https://github.com/KatowProject/trakteer-scraper"
+    },
+    {
+        "name": "Kusonime-API",
+        "description": "Kusonime Scraper",
+        "image": "/images/pic05.jpg",
+        "url": "https://github.com/KatowProject/kusonime-api"
+    }
+]
